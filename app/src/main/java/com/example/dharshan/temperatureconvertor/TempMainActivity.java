@@ -42,14 +42,16 @@ public class TempMainActivity extends AppCompatActivity {
 
                 if (celsiusButton.isChecked()) {
                     valview.setText(String
-                            .valueOf(ConvertorUtil.convertFahrenheitToCelsius(inputValue)));
+                            .valueOf(ConvertorUtil.convertFahrenheitToCelsius(inputValue))+" Celcius");
                     celsiusButton.setChecked(false);
                     fahrenheitButton.setChecked(true);
+                    text.setText("");
                 } else {
                     valview.setText(String
-                            .valueOf(ConvertorUtil.convertCelsiusToFahrenheit(inputValue)));
+                            .valueOf(ConvertorUtil.convertCelsiusToFahrenheit(inputValue))+" Fahrenheit");
                     fahrenheitButton.setChecked(false);
                     celsiusButton.setChecked(true);
+                    text.setText("");
                 }
 
                 break;
